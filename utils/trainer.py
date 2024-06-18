@@ -9,7 +9,7 @@ def train_model(model, train_loader, criterion, optimizer, device, num_epochs=5,
             start_time = time.time()
             
             for inputs, labels in train_loader:
-                inputs, labels = inputs.to(device), labels.to(labels)
+                inputs, labels = inputs.to(device), labels.to(device)
                 
                 optimizer.zero_grad()
                 
